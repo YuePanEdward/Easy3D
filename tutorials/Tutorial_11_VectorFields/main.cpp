@@ -40,7 +40,7 @@ int main(int /*argc*/, char** /*argv*/) {
 	PointCloud* cloud = new PointCloud;
 
 	// Load point cloud data from a file
-    bool success = cloud->read("../../../Easy3D/data/building_with_normals.bin");
+    bool success = cloud->read("../../../data/building_with_normals.bin");
 	if (!success) {
 		std::cerr << "file does not exist or invalid file format" << std::endl;
 		delete cloud;

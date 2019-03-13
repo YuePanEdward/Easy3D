@@ -38,7 +38,7 @@ SurfaceMesh* old_mesh_from_previous_example() {
 	SurfaceMesh* mesh = new SurfaceMesh;
 
 	// Read a mesh specified by its file name
-    std::string file_name = "../../../Easy3D/data/building.off";
+    std::string file_name = "../../../data/building.off";
 	bool success = mesh->read(file_name);
 	if (!success) {
 		std::cerr << "file does not exist or invalid file format" << std::endl;
